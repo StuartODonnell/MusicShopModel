@@ -17,6 +17,21 @@ public class BanjoleleTest {
     }
 
     @Test
+    public void hasDescription(){
+        assertEquals("Tanzanian Tenor", banjolele.getDescription());
+    }
+
+    @Test
+    public void hasBuyPrice(){
+        assertEquals(100.00, banjolele.getBuyPrice(), 0.01);
+    }
+
+    @Test
+    public void hasSellPrice(){
+        assertEquals(150.00, banjolele.getSellPrice(), 0.01);
+    }
+
+    @Test
     public void getInstrumentType(){
         assertEquals(InstrumentType.STRING, banjolele.getInstrumentType());
     }

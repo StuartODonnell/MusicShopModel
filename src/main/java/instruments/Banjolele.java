@@ -4,8 +4,8 @@ public class Banjolele extends Instrument{
 
 public int noOfStrings;
 
-    public Banjolele(String description, double buyPrice, double sellPrice, String colour, String material, InstrumentType instrumentType, String make, String model, int numberOfStrings, int noOfStrings) {
-        super(description, buyPrice, sellPrice, colour, material, instrumentType, make, model, numberOfStrings);
+    public Banjolele(String description, double buyPrice, double sellPrice, InstrumentType instrumentType, String colour, String material, String make, String model, int noOfStrings) {
+        super(description, buyPrice, sellPrice, instrumentType.STRING, colour, material, make, model);
         this.noOfStrings = noOfStrings;
     }
 

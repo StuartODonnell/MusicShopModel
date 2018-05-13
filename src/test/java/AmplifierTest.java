@@ -23,4 +23,20 @@ Amplifier amplifier;
         assertEquals(100.00, amplifier.getBuyPrice(), 0.01);
     }
 
+    @Test
+    public void hasSellPrice(){
+        assertEquals(150.00, amplifier.getSellPrice(), 0.01);
+    }
+
+    @Test
+    public void hasVolume(){
+        assertEquals(11, amplifier.getVolume());
+    }
+
+    @Test
+    public void setVolume(){
+        amplifier.setVolume(20);
+        assertEquals(20, amplifier.getVolume());
+    }
+
 }

@@ -4,23 +4,23 @@ import behaviours.IPlay;
 import behaviours.ISell;
 import items.Item;
 
-public abstract class Instrument extends Item implements ISell, IPlay {
+public abstract class Instrument extends Item implements IPlay {
 
+    protected InstrumentType instrumentType;
     protected String colour;
     protected String material;
-    protected InstrumentType instrumentType;
     protected String make;
     protected String model;
     protected int numberOfStrings;
 
-    public Instrument(String description, double buyPrice, double sellPrice, String colour, String material, InstrumentType instrumentType, String make, String model, int numberOfStrings) {
+    public Instrument(String description, double buyPrice, double sellPrice, InstrumentType instrumentType, String colour, String material, String make, String model) {
         super(description, buyPrice, sellPrice);
+        this.instrumentType = instrumentType;
         this.colour = colour;
         this.material = material;
-        this.instrumentType = instrumentType;
         this.make = make;
         this.model = model;
-        this.numberOfStrings = numberOfStrings;
+
     }
 
     public String getColour() {
@@ -63,13 +63,8 @@ public abstract class Instrument extends Item implements ISell, IPlay {
         this.model = model;
     }
 
-    public int getNumberOfStrings() {
-        return numberOfStrings;
-    }
 
-    public void setNumberOfStrings(int numberOfStrings) {
-        this.numberOfStrings = numberOfStrings;
-    }
 
+//    sell
 
 }

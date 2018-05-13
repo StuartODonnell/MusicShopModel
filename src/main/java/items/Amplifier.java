@@ -5,19 +5,22 @@ import behaviours.ISell;
 public class Amplifier extends Item implements ISell {
 
 
-    int outputPower;
+    int volume;
 
-    public Amplifier(String description, double buyPrice, double sellPrice, int outputPower) {
+    public Amplifier(String description, double buyPrice, double sellPrice, int volume) {
         super(description, buyPrice, sellPrice);
-        this.outputPower = outputPower;
+        this.volume = volume;
     }
 
-    public int getOutputPower() {
-        return outputPower;
+    public int getVolume() {
+        return volume;
     }
 
-    public void setOutputPower(int outputPower) {
-        this.outputPower = outputPower;
+    public void setVolume(int volume) {
+        this.volume = volume;
+
     }
+
+
 }
 

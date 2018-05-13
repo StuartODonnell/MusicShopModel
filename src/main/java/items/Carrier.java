@@ -18,4 +18,6 @@ public class Carrier extends Item implements ISell {
     public void setStrength(String strength) {
         this.strength = strength;
     }
+
+
 }

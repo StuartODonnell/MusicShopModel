@@ -21,5 +21,15 @@ public class BanjoleleTest {
         assertEquals(InstrumentType.STRING, banjolele.getInstrumentType());
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("twink....twinky...twang", banjolele.play());
+    }
+
+    @Test
+    public void canGetNoOfStrings(){
+        assertEquals(4, banjolele.getNoOfStrings());
+    }
+
 
 }

@@ -57,9 +57,3 @@ public class ShopTest {
 
 
 
-//
-//    @Test
-//    public void canGetTotalPossibleProfit() {
-//        shop1.addISellItem(guitar1);
-//        assertEquals(100, shop1.getTotalPossibleProfit());
-//    }

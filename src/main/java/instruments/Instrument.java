@@ -27,44 +27,25 @@ public abstract class Instrument extends Item implements IPlay {
         return colour;
     }
 
-    public void setColour(String colour) {
-        this.colour = colour;
-    }
-
     public String getMaterial() {
         return material;
     }
 
-    public void setMaterial(String material) {
-        this.material = material;
-    }
-
-    public InstrumentType getInstrumentType() {
-        return instrumentType;
-    }
-
-    public void setInstrumentType(InstrumentType instrumentType) {
-        this.instrumentType = instrumentType;
-    }
 
     public String getMake() {
         return make;
-    }
-
-    public void setMake(String make) {
-        this.make = make;
     }
 
     public String getModel() {
         return model;
     }
 
-    public void setModel(String model) {
-        this.model = model;
+    public InstrumentType getInstrumentType() {
+        return instrumentType;
     }
 
 
 
-//    sell
 
-}
+
+
